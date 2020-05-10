@@ -1,0 +1,11 @@
+# Project files
+/train
+/text-training-corpus
+/text-project
+/image-training-corpus+annotations
+/image-project
+project-notes.org
+
+# Jupyter Notebook
+.ipynb_checkpoints
+image_project.ipynb
