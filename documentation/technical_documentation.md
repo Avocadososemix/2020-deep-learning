@@ -4,7 +4,7 @@
 
 ### Data collection
 
-The training data used for the project is a subset of the Reuters 1997 text categorization dataset https://www.cs.helsinki.fi/u/yangarbe/Courses/2020-deep-learning/text-training-corpus/.
+The training data used for the project is a subset of the Reuters 1997 text categorization [dataset](https://www.cs.helsinki.fi/u/yangarbe/Courses/2020-deep-learning/text-training-corpus/).
 
 The original compressed data consists of several XML files corresponding to articles that appeared on the Reuters news service. These XML files contain the ids, dates, languages, titles, topic codes and text bodies of said articles. Our interest were in selecting the text bodies and title codes from each article. The title codes are shorthand codes such as 'ECAT' for 'ECONOMICS' that denote the category/topic area of the article. Each article may have several topic codes.
 
