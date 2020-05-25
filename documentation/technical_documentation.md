@@ -54,8 +54,9 @@ F1-score is used to determine the accuracy of the prediction.
 
 #### Results
 
-A link to the results.
+Some discussion about our results for training and for the final test data.
 
+[Training Results 25.5.](./documentation/training_results.txt)
 
 
 # Additional research / experimentation
