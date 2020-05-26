@@ -30,15 +30,7 @@ Using the MultilabelBinarizer and tokenizer from Keras, the cleaned binarized da
 
 #### LSTM model Neural Network
 
-A LSTM recurrent neural network architecture was chosen due to its good suitability to classify and make predictions 
-
-ADAM (an adaptive learning rate optimization algorithm), was used to optimize the neural network instead of normal gradient descent that would have a fixed learning rate during training.
-
-Sigmoid activation function was used for the output neuron as the project was a multilabel classification and each probability distribution of the neurons are independent of each other. 
-
-#Sigmoid was used instead of a SoftMax function due to it allowing a high probability for several labels #simultaneously instead of of summing towards 1 like SoftMax. We found this desirable when working with multi-#label data.
-
-As the loss function, mean squared error was found to work well.
+A LSTM recurrent neural network architecture was chosen due to its good suitability to classify and make predictions. ADAM (an adaptive learning rate optimization algorithm), was used to optimize the neural network instead of normal gradient descent that would have a fixed learning rate during training.The Sigmoid activation function was used for the output neuron as the project was a multilabel classification and each probability distribution of the neurons are independent of each other. As the loss function, mean squared error was found to work well.
 
 
 
