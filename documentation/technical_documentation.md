@@ -34,15 +34,17 @@ A LSTM recurrent neural network architecture was chosen due to its good suitabil
 
 ADAM (an adaptive learning rate optimization algorithm), was used to optimize the neural network instead of normal gradient descent that would have a fixed learning rate during training.
 
-Sigmoid was used instead of a SoftMax function due to it allowing a high probability for several labels simultaneously instead of of summing towards 1 like SoftMax. We found this desirable when working with multi-label data.
+Sigmoid activation function was used for the output neuron as the project was a multilabel classification and each probability distribution of the neurons are independent of each other. 
 
-As the loss function, mean squared error was found to work well, and was used over cross-entropy which would be used for multi-class classification.
+#Sigmoid was used instead of a SoftMax function due to it allowing a high probability for several labels #simultaneously instead of of summing towards 1 like SoftMax. We found this desirable when working with multi-#label data.
+
+As the loss function, mean squared error was found to work well.
 
 
 
 #### Training the model
 
-The model was trained using the cuda GPU option, speeding up the training process. A batch size of 32 was chosen empirically. The model was ran for 3 epochs.
+The model was trained using the cuda GPU option, speeding up the training process. A batch size of 32 was chosen empirically. The model was ran for 3 epochs as the result looked satisfactory.
 
 
 
