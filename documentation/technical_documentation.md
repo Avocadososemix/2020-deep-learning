@@ -48,9 +48,9 @@ F1-score is used to determine the accuracy of the prediction.
 
 #### Results
 
-Some discussion about our results for training and for the final test data.
-
-[Training Results 25.5.](./training_results.txt)
+Our training results and validation showed that the model itself reaches a very high level of accuracy when it comes to predicting the correct labels of the articles. With only 1 training epoch, our model attained an accuracy of over *0.99*, with a loss value of less than *0.01*. Thus, we would classify our model to be often successful in determining the correct topic codes for articles.
+ 
+Here are the [results of training](./documentation/training_results.txt) the model for 3 epochs. In the following charts, you can see the changes in the loss and accuracy of the model within the first epoch when the model was trained using the whole dataset.
 
 <img src="./validattion_accuracy.JPG" width="800">
 
