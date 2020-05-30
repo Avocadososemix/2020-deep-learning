@@ -52,11 +52,20 @@ Some discussion about our results for training and for the final test data.
 
 [Training Results 25.5.](./training_results.txt)
 
+<img src="./validattion_accuracy.JPG" width="800">
 
-# Additional research / experimentation
+<img src="./validation_loss.JPG" width="800">
 
-## Trying out different models
+# Future research and experimentation
+
+In the case that more research and time would be spent working on this project, here are some of our ideas on what could be the focus of further work.
 
 
 
+Due to the current training data containing only 299773 records, and only containing *103* of the topic codes included within the list of topic codes,  it would be interesting to attempt to train the model using the whole  ~850K article Reuters dataset that should contain all the *126* codes included in **topic_codes.txt**, and compare the accuracy and losses of training with both these datasets. 
 
+Another interesting take on the experiment would be to test whether selecting certain text features from the article body texts would perform better than selecting all the text. Noun or verb phrase extraction could be used to only use the nouns in the text bodies, and the stopwords that were used could be added to and customized also for the task. Also, the cut-off thresholds used to interpret the probability for a label could be experimented on, testing whether a value other than 0.5 performs better.
+
+As for more general experiments that could be performed, testing the use of traditional machine learning methods could be compared to the results currently gained from deep learning methods. Topic modeling techniques such as LDA (Latent Dirichlet Allocation) or logistic regression and their effectiveness at classifying the data could also be tested.
+
+In this notebook, the **pyTorch** package was used. It would be interesting to see how using **TensorFlow**, **Keras** or some other deep learning package would perform compared to the current implementation. The novel method of Sequence to sequence modelling could also have been used for training the data. Testing the use of transfer learning in the classification of text data could be experimented with BERT (Bidirectional Encoder Representations from Transformers).
